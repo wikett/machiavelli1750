@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # machiavelli1750
 
 > A Vue.js project
@@ -19,3 +20,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# machiavelli1750
+>>>>>>> 8dd350af16a816f6218c1e8cdc5f37885b5afb04
