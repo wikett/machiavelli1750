@@ -96,7 +96,7 @@
     }
   }
 </script>
-<style>
+<style scoped>
 .navbar {
     background-color: transparent;
     color:white;

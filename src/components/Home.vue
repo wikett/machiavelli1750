@@ -27,9 +27,31 @@
       <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
           <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
       </a>
-     <figcaption itemprop="caption description">1750 Primavera</figcaption>
+     <figcaption itemprop="caption description">1750 Primavera (hambruna)</figcaption>
       <p>Primavera (hambruna)</p>                                    
     </figure>
+     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
+          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
+      </a>
+     <figcaption itemprop="caption description">1750 Primavera (ajustes militares)</figcaption>
+      <p>Primavera (ajustes militares)</p>                                    
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
+          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
+      </a>
+     <figcaption itemprop="caption description">1750 Primavera (movimientos)</figcaption>
+      <p>Primavera (movimientos)</p>                                    
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
+          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
+      </a>
+     <figcaption itemprop="caption description">1750 Verano (plaga)</figcaption>
+      <p>Verano (plaga)</p>                                    
+    </figure>
+
 
    <!-- <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
       <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
