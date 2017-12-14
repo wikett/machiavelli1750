@@ -2,7 +2,7 @@
 
   <div class="inicio">
     <top-navbar title="Teacher Dashboard"></top-navbar>
-    <div class="columns is-centered">
+    <div class="columns is-centered is-hidden-touch">
       <div class="column is-one-third"></div>
       <div class="column is-three-fifths">
         <figure class="image">
