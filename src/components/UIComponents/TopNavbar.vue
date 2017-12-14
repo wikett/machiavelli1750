@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://machiavelli1750.com">
+    <a class="navbar-item" href="#">
       <img src="../../assets/machiavelli-logo.png" alt="Machiavelli 1750" width="112">
     </a>
     <div class="navbar-burger burger" :class="{'is-active': isBurgerActive}" data-target="navbarExampleTransparentExample" @click="openBurger">

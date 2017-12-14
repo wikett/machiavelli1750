@@ -30,59 +30,8 @@
      <figcaption itemprop="caption description">1750 Primavera (hambruna)</figcaption>
       <p>Primavera (hambruna)</p>                                    
     </figure>
-     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
-          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-     <figcaption itemprop="caption description">1750 Primavera (ajustes militares)</figcaption>
-      <p>Primavera (ajustes militares)</p>                                    
-    </figure>
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
-          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-     <figcaption itemprop="caption description">1750 Primavera (movimientos)</figcaption>
-      <p>Primavera (movimientos)</p>                                    
-    </figure>
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
-          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-     <figcaption itemprop="caption description">1750 Verano (plaga)</figcaption>
-      <p>Verano (plaga)</p>                                    
-    </figure>
-
-
-   <!-- <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-          <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 2</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-          <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 3</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-          <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 4</figcaption>
-    </figure>-->
-
 
   </div>
-
-
-
-
-
-
-
 
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -386,6 +335,7 @@ initPhotoSwipeFromDOM('.my-gallery');
 h2{
   padding-left: 20px;
   font-size: 2rem;
+  color:white;
 }
 .my-gallery {
   width: 100%;
