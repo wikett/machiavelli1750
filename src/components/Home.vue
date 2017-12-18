@@ -25,10 +25,18 @@
 
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
       <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
-          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="Image description" />
+          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="1750 Primavera (hambruna)" />
       </a>
      <figcaption itemprop="caption description">1750 Primavera (hambruna)</figcaption>
       <p>Primavera (hambruna)</p>                                    
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513602793/machiavelli/1750-Primavera_Ajustes.jpg" itemprop="contentUrl" data-size="3410x2168">
+          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513602793/machiavelli/1750-Primavera_Ajustes.jpg" itemprop="thumbnail" alt="ajustes militares" />
+      </a>
+     <figcaption itemprop="caption description">1750 Primavera (ajustes militares)</figcaption>
+      <p>Primavera (ajustes militares)</p>                                    
     </figure>
 
   </div>
