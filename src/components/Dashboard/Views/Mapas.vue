@@ -173,7 +173,7 @@ methods: {
               var settingsMapa = {
               //async: true,
               //crossDomain: true,
-              url: `https://machiavelli1750-api.herokuapp.com/api/partidas/addcampanya/5a3c3e3c5b2d653b1c6507f0`,
+              url: `https://machiavelli1750-api.herokuapp.com/api/partidas/addcampanya/5a46d9b9803b830014eac2ba`,
               method: "PUT",
               headers: {
                 "content-type": "application/json"
