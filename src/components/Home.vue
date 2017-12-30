@@ -13,17 +13,44 @@
     </div>
     <div class="columns">
       <div class="column">
-<h1>Año 1750</h1>
+        <div v-show="this.display1750">
+        <h1>Año 1750</h1>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-    <figure v-for="item in campanya_list" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <figure v-for="item in campanya_list[1750]" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a :href="item.imagen" itemprop="contentUrl" data-size="3410x2168">
                 <img :src="item.imagen" itemprop="thumbnail" :alt="item.titulo" />
             </a>
             <figcaption itemprop="caption description">{{item.titulo}}</figcaption>
       <p>{{item.titulo}}</p> 
     </figure>
-  </div>
+  </div>    
+    </div>
 
+    <div v-show="this.display1751">
+        <h1>Año 1751</h1>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <figure v-for="item in campanya_list[1751]" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a :href="item.imagen" itemprop="contentUrl" data-size="3410x2168">
+                <img :src="item.imagen" itemprop="thumbnail" :alt="item.titulo" />
+            </a>
+            <figcaption itemprop="caption description">{{item.titulo}}</figcaption>
+      <p>{{item.titulo}}</p> 
+    </figure>
+  </div>    
+    </div>
+
+    <div v-show="this.display1752">
+        <h1>Año 1752</h1>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <figure v-for="item in campanya_list[1752]" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a :href="item.imagen" itemprop="contentUrl" data-size="3410x2168">
+                <img :src="item.imagen" itemprop="thumbnail" :alt="item.titulo" />
+            </a>
+            <figcaption itemprop="caption description">{{item.titulo}}</figcaption>
+      <p>{{item.titulo}}</p> 
+    </figure>
+  </div>    
+    </div>
 
   </div>
 
@@ -104,7 +131,7 @@
 <script>
 
 import axios from "axios";
-
+import _ from "underscore";
 import TopNavbar from "@/components/UIComponents/TopNavbar.vue";
 
 export default {
@@ -114,13 +141,20 @@ export default {
   name: 'HelloWorld',
   data: () => ({
     campanya_list: [],
+    display1750: false,
+    display1751: false,
+    display1752: false,
+    display1753: false,
+    display1754: false,
+    display1755: false,
     is_loaded: false
   }),
   mounted(){
     var settings = {
         async: true,
         crossDomain: true,
-        url: "https://machiavelli1750-api.herokuapp.com/api/partidas/5a46d9b9803b830014eac2ba",
+        //url: "https://machiavelli1750-api.herokuapp.com/api/partidas/5a46d9b9803b830014eac2ba",
+        url: "http://localhost:9000/api/partidas/5a3c3e3c5b2d653b1c6507f0",
         method: "GET",
         headers: {
           "content-type": "application/json"
@@ -132,8 +166,21 @@ export default {
       axios(settings)
         .then(
           (response) => {
-            console.log(`response.data: ${JSON.stringify(response.data)}`)
-            this.campanya_list = response.data.campanyas;
+            //console.log(`response.data: ${JSON.stringify(response.data)}`);
+            this.campanya_list = _.groupBy(response.data.campanyas, "anyo");
+            if(!_.isUndefined(this.campanya_list[1750]))
+            {
+                this.display1750 = true;
+            }
+            if(!_.isUndefined(this.campanya_list[1751]))
+            {
+                this.display1751 = true;
+            }
+            if(!_.isUndefined(this.campanya_list[1752]))
+            {
+                this.display1752 = true;
+            }
+            //console.log(`response.data: ${JSON.stringify(this.campanya_list["1751"], null, 4)}`)
             this.is_loaded = true;
 
             var initPhotoSwipeFromDOM = function(gallerySelector) {

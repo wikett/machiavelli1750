@@ -20,27 +20,6 @@
           <li>
             <a href="#ajustes"> Fase de ajustes militares </a>
           </li>
-          <li>
-            <a href="#form"> Form </a>
-          </li>
-          <li>
-            <a href="#icon"> Icon </a>
-          </li>
-          <li>
-            <a href="#images"> Images </a>
-          </li>
-          <li>
-            <a href="#notifications"> Notifications </a>
-          </li>
-          <li>
-            <a href="#progress"> Progress bars </a>
-          </li>
-          <li>
-            <a href="#table"> Table </a>
-          </li>
-          <li>
-            <a href="#tag"> Tag </a>
-          </li>
         </ul>
       </aside>
     </div>
@@ -108,6 +87,19 @@ Los jugadores tendrán que hacer un envío de e-mail siempre que surjan decision
           </div>
         </div>
       </section>  
+      <section class="section" id="objetivo">
+        <h1 class="title"> OBJETIVO DEL JUEGO </h1>
+        <hr>
+        <div class="columns">
+          <div class="column">
+            <p>Cada partida de MACHIAVELLI, aunque utilice las mismas reglas, puede ser diferente de la anterior, incluyendo las Condiciones de Victoria, que pueden ser una de entre las siguientes:</p>
+            <ul style="list-style-type: square;">
+  <li style="margin-left: 70px;">Controlar al menos 30 regiones y cumplir con los objetivos de la facción.</li>
+  <li style="margin-left: 70px;">Cada jugador tendrá varios objetivos secundarios necesarios para ganar. Cumpliendo estos objetivos secundarios, el jugador conseguirá recompensas.</li>
+  </ul>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </div>
