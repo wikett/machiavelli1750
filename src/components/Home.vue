@@ -153,8 +153,8 @@ export default {
     var settings = {
         async: true,
         crossDomain: true,
-        //url: "https://machiavelli1750-api.herokuapp.com/api/partidas/5a46d9b9803b830014eac2ba",
-        url: "http://localhost:9000/api/partidas/5a3c3e3c5b2d653b1c6507f0",
+        url: "https://machiavelli1750-api.herokuapp.com/api/partidas/5a46d9b9803b830014eac2ba",
+        //url: "http://localhost:9000/api/partidas/5a3c3e3c5b2d653b1c6507f0",
         method: "GET",
         headers: {
           "content-type": "application/json"
