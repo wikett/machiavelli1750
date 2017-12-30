@@ -1,7 +1,7 @@
 <template>
 
   <div class="inicio">
-    <top-navbar title="Teacher Dashboard"></top-navbar>
+    <top-navbar ></top-navbar>
     <div class="columns is-centered is-hidden-touch">
       <div class="column is-one-third"></div>
       <div class="column is-three-fifths">
@@ -13,35 +13,22 @@
     </div>
     <div class="columns">
       <div class="column">
-          
-        </div>
-      </div>
-    <div class="columns">
-      <div class="column">
-      
-<h2>Año 1750</h2>
-
-  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="contentUrl" data-size="3410x2168">
-          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513258952/machiavelli/1750-Primavera.jpg" itemprop="thumbnail" alt="1750 Primavera (hambruna)" />
-      </a>
-     <figcaption itemprop="caption description">1750 Primavera (hambruna)</figcaption>
-      <p>Primavera (hambruna)</p>                                    
+<h1>Año 1750</h1>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <figure v-for="item in campanya_list" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a :href="item.imagen" itemprop="contentUrl" data-size="3410x2168">
+                <img :src="item.imagen" itemprop="thumbnail" :alt="item.titulo" />
+            </a>
+            <figcaption itemprop="caption description">{{item.titulo}}</figcaption>
+      <p>{{item.titulo}}</p> 
     </figure>
+  </div>
 
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://res.cloudinary.com/djhqderty/image/upload/v1513602793/machiavelli/1750-Primavera_Ajustes.jpg" itemprop="contentUrl" data-size="3410x2168">
-          <img src="https://res.cloudinary.com/djhqderty/image/upload/v1513602793/machiavelli/1750-Primavera_Ajustes.jpg" itemprop="thumbnail" alt="ajustes militares" />
-      </a>
-     <figcaption itemprop="caption description">1750 Primavera (ajustes militares)</figcaption>
-      <p>Primavera (ajustes militares)</p>                                    
-    </figure>
 
   </div>
 
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
+
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     <!-- Background of PhotoSwipe. 
@@ -115,6 +102,9 @@
 </template>
 
 <script>
+
+import axios from "axios";
+
 import TopNavbar from "@/components/UIComponents/TopNavbar.vue";
 
 export default {
@@ -122,13 +112,31 @@ export default {
     TopNavbar
   },
   name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App!'
-    }
-  },
+  data: () => ({
+    campanya_list: [],
+    is_loaded: false
+  }),
   mounted(){
-    var initPhotoSwipeFromDOM = function(gallerySelector) {
+    var settings = {
+        async: true,
+        crossDomain: true,
+        url: "https://machiavelli1750-api.herokuapp.com/api/partidas/5a46d9b9803b830014eac2ba",
+        method: "GET",
+        headers: {
+          "content-type": "application/json"
+        },
+        processData: false
+        //data: JSON.stringify({ email: this.$store.getters.getUserEmail })
+      };
+
+      axios(settings)
+        .then(
+          (response) => {
+            console.log(`response.data: ${JSON.stringify(response.data)}`)
+            this.campanya_list = response.data.campanyas;
+            this.is_loaded = true;
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
     // (children of gallerySelector)
@@ -333,6 +341,14 @@ export default {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
+
+          }
+        )
+        .catch(
+          (error) => {
+            console.log(error);
+          }
+        );
   }
 
 }
@@ -340,10 +356,9 @@ initPhotoSwipeFromDOM('.my-gallery');
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h2{
+h1{
   padding-left: 20px;
   font-size: 2rem;
-  color:white;
 }
 .my-gallery {
   width: 100%;
@@ -358,13 +373,13 @@ h2{
   display: block;
   float: left;
   margin: 0 5px 5px 0;
-  width: 290px;
+  width: 200px;
 }
 .my-gallery figcaption {
   display: none;
 }
 .my-gallery p {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin-top: -10px;
     color: #5f0912;
 }

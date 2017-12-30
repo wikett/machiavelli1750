@@ -12,15 +12,13 @@ export default {
 
 <style>
 #app {
-  font-family: 'Old Standard TT', serif;
-  font-size: 1.2rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /*font-family: 'Old Standard TT', serif;
+  font-size: 1.2rem;*/
 }
-html,body {
-   background-image: url("./assets/papel.jpg");
-   background-color: #cccccc;
-   height:100%;
-   color:white;
+html {
+
+}
+body{
+
 }
 </style>
