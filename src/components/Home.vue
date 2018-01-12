@@ -52,6 +52,32 @@
   </div>    
     </div>
 
+    <div v-show="this.display1753">
+        <h1>Año 1753</h1>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <figure v-for="item in campanya_list[1753]" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a :href="item.imagen" itemprop="contentUrl" data-size="3410x2168">
+                <img :src="item.imagen" itemprop="thumbnail" :alt="item.titulo" />
+            </a>
+            <figcaption itemprop="caption description">{{item.titulo}}</figcaption>
+      <p>{{item.titulo}}</p> 
+    </figure>
+  </div>    
+    </div>
+
+    <div v-show="this.display1754">
+        <h1>Año 1754</h1>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <figure v-for="item in campanya_list[1754]" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a :href="item.imagen" itemprop="contentUrl" data-size="3410x2168">
+                <img :src="item.imagen" itemprop="thumbnail" :alt="item.titulo" />
+            </a>
+            <figcaption itemprop="caption description">{{item.titulo}}</figcaption>
+      <p>{{item.titulo}}</p> 
+    </figure>
+  </div>    
+    </div>
+
   </div>
 
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -179,6 +205,14 @@ export default {
             if(!_.isUndefined(this.campanya_list[1752]))
             {
                 this.display1752 = true;
+            }
+            if(!_.isUndefined(this.campanya_list[1753]))
+            {
+                this.display1753 = true;
+            }
+            if(!_.isUndefined(this.campanya_list[1754]))
+            {
+                this.display1754 = true;
             }
             //console.log(`response.data: ${JSON.stringify(this.campanya_list["1751"], null, 4)}`)
             this.is_loaded = true;

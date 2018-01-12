@@ -22,6 +22,7 @@
           </li>
         </ul>
       </aside>
+
     </div>
     <div class="column">
       <section class="section" id="esquema">
@@ -84,6 +85,7 @@ Los jugadores tendrán que hacer un envío de e-mail siempre que surjan decision
   <li style="margin-left: 70px;">Para la Fase de Ajustes Militares (solo campaña de primavera).</li>
   <li style="margin-left: 70px;">Para indicar las órdenes a realizar y os gastos extras</li>
   </ul>
+  <p  class="has-text-right"><a href="#" @click="subirArriba()">Subir arriba</a></p>
           </div>
         </div>
       </section>  
@@ -92,11 +94,28 @@ Los jugadores tendrán que hacer un envío de e-mail siempre que surjan decision
         <hr>
         <div class="columns">
           <div class="column">
-            <p>Cada partida de MACHIAVELLI, aunque utilice las mismas reglas, puede ser diferente de la anterior, incluyendo las Condiciones de Victoria, que pueden ser una de entre las siguientes:</p>
+            <p>Cada partida de MACHIAVELLI, aunque utilice las mismas reglas, puede ser diferente de la anterior, incluyendo las Condiciones de Victoria, que pueden ser una de entre las siguientes:
+            </p>
             <ul style="list-style-type: square;">
-  <li style="margin-left: 70px;">Controlar al menos 30 regiones y cumplir con los objetivos de la facción.</li>
-  <li style="margin-left: 70px;">Cada jugador tendrá varios objetivos secundarios necesarios para ganar. Cumpliendo estos objetivos secundarios, el jugador conseguirá recompensas.</li>
-  </ul>
+              <li style="margin-left: 70px;">Controlar al menos 30 regiones y cumplir con los objetivos de la facción.</li>
+              <li style="margin-left: 70px;">Cada jugador tendrá varios objetivos secundarios necesarios para ganar. Cumpliendo estos objetivos secundarios, el jugador conseguirá recompensas.</li>
+            </ul>
+            <p  class="has-text-right"><a href="#" @click="subirArriba()">Subir arriba</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="mapa">
+        <h1 class="title"> EL MAPA Y SUS ELEMENTOS</h1>
+        <hr>
+        <div class="columns">
+          <div class="column">
+            <p>Para que cada jugador permanezca informado de la situación de la partida, en cada turno se publicará un mapa en el que se reflejan las acciones de los movimientos del último turno.
+            </p>
+            <br />
+            <p>
+              Podemos dividir los elementos del mapa en dos: constantes (regiones, mares, puertos, montañas, etc) y móviles (unidades ejército, flotas, marcadores de hambre, etc).
+            </p><br />
+            <p  class="has-text-right"><a href="#" @click="subirArriba()">Subir arriba</a></p>
           </div>
         </div>
       </section>
@@ -112,8 +131,15 @@ import TopNavbar from "@/components/UIComponents/TopNavbar.vue";
     export default {
       components: {
             TopNavbar
-          }
-  }
+      },
+      methods: 
+      {
+        subirArriba()
+        {
+          window.scrollTo(0, 0);
+        }
+      }
+    }
 </script>
 <style scoped>
 .tg  {border-collapse:collapse;border-spacing:0;}
